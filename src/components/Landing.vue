@@ -1,11 +1,11 @@
 <template>
 <div>
   <div class="bg">
-    <span class="title">Landing</span>
-    <span class="subtitle">A Vue project with CSS</span>
+    <span class="title">Vue <i class="fa fa-heart"></i> AdminLTE</span>
+    <span class="subtitle">A Vue project simulating AdminLTE with CSS</span>
     <span class="author">by Gerard Rey González</span>
     <!--<img src="http://i.imgur.com/8qR03.jpg">-->
-    <img src="https://images7.alphacoders.com/403/403375.jpg">
+    <img src="../assets/portal_landing1.jpg">
   </div>
   <div class="content">
     <div class="card">
@@ -19,7 +19,11 @@
     </div>
   </div>
   <div class="bg2">
-    <img src="https://images7.alphacoders.com/403/403375.jpg">
+    <a id="git-link" target="_blank" href="https://github.com/GreyGonz">
+      <i class="fab fa-github"></i>
+      <span>GreyGonz</span>
+    </a>
+    <img src="../assets/portal_landing1.jpg">
   </div>
 </div>
 </template>
@@ -39,6 +43,7 @@
   header {
     position: relative;
     background: #4f4f4f;
+    /*background: #fff;*/
     display: grid;
     grid-template-columns: 200px auto;
     grid-template-rows: 100%;
@@ -139,8 +144,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    /*background: url(http://i.imgur.com/8qR03.jpg) no-repeat center;*/
-    background: url(https://images7.alphacoders.com/403/403375.jpg) no-repeat center;
+    background: url(../assets/portal_landing1.jpg) no-repeat center;
     background-size: contain;
     margin: 0;
     padding: 0;
@@ -155,8 +159,10 @@
   }
 
   .bg2 {
-    position: relative;
-    background: url(https://images7.alphacoders.com/403/403375.jpg) no-repeat center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: url(../assets/portal_landing1.jpg) no-repeat center;
     background-size: contain;
     margin: 0;
     padding: 0;
@@ -168,6 +174,14 @@
     display: block;
     width: 100%;
     margin: 0;
+  }
+
+  #git-link {
+    font-family: Roboto;
+    width: 7em;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
   }
 
   .content {
@@ -184,6 +198,7 @@
   }
 
   .card {
+    background: #bebebe;
     display: flex;
     flex-direction: column;
     align-items: center;
